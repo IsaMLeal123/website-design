@@ -1,0 +1,17 @@
+/*This is a CSS comment*/
+/*CSS reset - Applied to everthing*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*This block affects the body of html*/ 
+body{
+    background-color: antiquewhite;
+    font-family:'Courier New', Courier, monospace;
+    line-height: 1.6; /* spacing between lines */
+}
+
+h1, h2, h3{
+    margin-bottom: 0.5em; /* scales with font size */ /*  */ 
+}
