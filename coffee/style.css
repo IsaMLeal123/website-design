@@ -102,6 +102,10 @@ h1,h2,h3,h4,h5,h6{
 .text-light{color: var(--light);}
 .text-dark{color: var(--dark);}
 .text-muted{color: var(--muted)}
+
+.shadow-dark {box-shadow: var(--shadow-dark);}
+.shadow-light {box-shadow: var(--shadow-light);}
+
 /***************************** COMPONENTS *****************************/
 .product-image{
     position: relative; /* Will tell the product to behave */
@@ -131,8 +135,27 @@ h1,h2,h3,h4,h5,h6{
     left: var(--spacing-2);
 }
 
+.tags{
+    display: flex;
+    gap: var(--spacing-1);
+    list-style: none;
+}
 
+.tags .tag-item {
+    background: var(--primary);
+    color: var(--light);
+    text-decoration: none;
+    
+    border-radius: var(--spacing-2);
+    padding: var(--spacing-1) var(--spacing-2);
+}
 /***************************** LAYOUT *****************************/
+
+.container{
+    max-width: 1280px;
+    margin: var(--spacing-2) auto var(--spacing-0);
+}
+
 .d-flex{display: flex;}
 
 .flex-between{justify-content: space-between;}
