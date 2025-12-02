@@ -149,6 +149,11 @@ h1,h2,h3,h4,h5,h6{
     border-radius: var(--spacing-2);
     padding: var(--spacing-1) var(--spacing-2);
 }
+
+.card{
+    background-color: var(--primary-tint);
+    color: var(--dark);
+}
 /***************************** LAYOUT *****************************/
 
 .container{
@@ -163,11 +168,13 @@ h1,h2,h3,h4,h5,h6{
 .grid-2col{
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Repeat 1fr twice */ 
+    gap: var(--spacing-3)
 }
 
 .grid-3col{
     display:grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-3)
 }
 
 /***************************** SPACING *****************************/
@@ -201,4 +208,28 @@ h1,h2,h3,h4,h5,h6{
 
 .swatch .swatch-name{
     text-align: center;
+}
+
+/***************************** TEXT *****************************/
+.line-1{ 
+    display: -webkit-box; /* Chrome based browsers*/
+    display: -moz-box; /* Firefox based*/
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+
+    height: 1.5em;
+    overflow: clip;
+    text-overflow: ellipsis;
+}
+
+.line-2{ 
+    display: -webkit-box; /* Chrome based browsers*/
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+
+    height: 3em;
+    overflow: clip;
+    text-overflow: ellipsis;
 }
